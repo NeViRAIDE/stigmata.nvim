@@ -1,4 +1,4 @@
-local hi = require('chameleon').get_theme_tb('colors')
+local hi = require('chameleon.utils').get_theme_tb('colors')
 local d = require('stigmata.utils').decoder
 
 ---@type Nonicons
