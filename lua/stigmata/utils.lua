@@ -15,6 +15,19 @@ local M = {
 
     return space(space_before) .. icon .. space(space_after)
   end,
+  icons_type = function()
+    if vim.g.n then
+      return {
+        ---@type Nonicons
+        global = require('stigmata.nonicons'),
+        lspkind = require('stigmata.nonicons.lspkind'),
+      }
+    end
+    return {
+      global = require('stigmata.devicons'),
+      lspkind = require('stigmata.devicons.lspkind'),
+    }
+  end,
 }
 
 return M

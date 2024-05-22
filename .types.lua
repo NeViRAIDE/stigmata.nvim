@@ -8,3 +8,4 @@
 ---@class IconUtils<table>
 ---@field icon RenderIcon Funtion for creating string with icon and spases before/after it.
 ---@field decoder Decoder Function for decoding code of icon to the symbol.
+---@field icons_type fun():{global:Nonicons|table,lspkind:table} Function for decoding code of icon to the symbol.
